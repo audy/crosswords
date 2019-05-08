@@ -31,3 +31,7 @@ Output looks something like this:
 The output isn't perfect as the algorithm will place words next to each other
 without making sure that new words aren't invented. And I still have no idea
 how to generate the clues.
+
+## Usage
+
+Do `python crosswords.py` and then mash on the keyboard.
