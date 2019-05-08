@@ -184,13 +184,17 @@ def main(screen):
             grid = transpose(grid)
 
         c = chr(screen.getch()).lower()
-        word = random.choice([w for w in words if w.startswith(c)])
-        grid = crossword(grid, [word])
-        draw_curses(screen, grid)
+        choices = [w for w in words if w.startswith(c)]
 
-        i += 1
+        if len(choices) == 0:
+            continue
+        else:
+            word = random.choice(choices)
+            grid = crossword(grid, [word])
+            draw_curses(screen, grid)
 
-        screen.refresh()
+            i += 1
+            screen.refresh()
 
 
 if __name__ == "__main__":
