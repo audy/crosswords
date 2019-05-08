@@ -1,6 +1,7 @@
 # crosswords
 
-Attempting to make a crossword puzzle generator
+Got bored on a plane with no internet and attempted to write a crossword puzzle
+generator.
 
 Output looks something like this:
 
